@@ -59,7 +59,7 @@ new_sr = 24000
 # size of time window to analyze in seconds
 window_size = conf.CLIP_SECS
 # minimum prediction probability
-threshold = 0.0
+threshold = 0.5
 # cores to use to run the model
 run_cores = 200
 # cores to use to write to the database
