@@ -190,7 +190,7 @@ output_df = filtered_df\
 jdbc_url = 'jdbc:postgresql://{host}/{db_name}'.format(host=conf.DB_HOST, db_name=conf.DB_NAME)
 connection_props = {
   'driver': 'org.postgresql.Driver',
-  'numPartitions': db_cores,
+  'numPartitions': str(db_cores),
   'user': conf.DB_USER,
   'password': conf.DB_PASSWORD
 }
